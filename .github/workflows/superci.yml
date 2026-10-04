@@ -1,5 +1,5 @@
-# sveltejs/svelte's .github/workflows/ci.yml: Tests (node-version 24, ubuntu-latest), for the Superaction scoreboard.
-name: Superaction (GitHub)
+# sveltejs/svelte's .github/workflows/ci.yml: Tests (node-version 24, ubuntu-latest), for the SuperCI scoreboard.
+name: SuperCI
 
 on:
   workflow_dispatch: {}
@@ -13,8 +13,8 @@ env:
 
 jobs:
   test:
-    name: test / github
-    runs-on: ubuntu-latest
+    name: test / superci
+    runs-on: superci
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
